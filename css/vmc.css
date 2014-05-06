@@ -150,12 +150,10 @@ body{
 
 .products{
 	width: inherit;
-
 }
 
 #productSection{
-	width: 75%;
-	margin: 15px auto 50px;
+	margin: 15px 5em 50px;
 	-webkit-column-count:3; /* Chrome, Safari, Opera */
 	-moz-column-count:3; /* Firefox */
 	column-count:3;
@@ -207,6 +205,7 @@ body{
 .flip_container, .front, .back{
 	width: 18em;
 	height: 15em;
+	margin: 0 auto;
 }
 
 .flipper {
@@ -244,7 +243,8 @@ body{
 
 #lessons {
 	background: url(../assets/background_gray.jpg);
-	height: 34.5em;
+	min-height: 45em;
+	max-height: 55em;
 }
 
 .headline {
