@@ -131,18 +131,15 @@ body{
 /* Products Section */
 
 #products{
-	height: 41em;
-}
-
-.product_background{
-	height: 825px;
-	width: 100%;
+	background: url(../images/background.png) center no-repeat no-repeat;	
+	background-size: 100%;	 
+	height: 55em;
 }
 
 
 .products_head{
-	margin-top: -767px;
-	margin-bottom: 50px;
+	padding-top: 1.5em;
+	margin-bottom: .5em;
 	font-size: 70px;
 	letter-spacing: 4px;
 	text-align: center;
@@ -152,8 +149,8 @@ body{
 	width: inherit;
 }
 
-#productSection{
-	margin: 15px 5em 50px;
+.productSection{
+	margin: 70px 5em 50px;
 	-webkit-column-count:3; /* Chrome, Safari, Opera */
 	-moz-column-count:3; /* Firefox */
 	column-count:3;
@@ -175,19 +172,6 @@ body{
 	width: inherit;
 	font-size: 26px;
 	margin-top: 8px;
-}
-
-.products2{
-	height: 146px;
-}
-
-#productSection2 {
-	width: 75%;
-	margin-top: -118px;
-	margin-left: 12.5%;
-	-webkit-column-count:3; /* Chrome, Safari, Opera */
-	-moz-column-count:3; /* Firefox */
-	column-count:3;
 }
 
 .flip_container{
@@ -249,12 +233,11 @@ body{
 
 #lessons {
 	background: url(../assets/background_gray.jpg);
-	min-height: 45em;
-	max-height: 55em;
+	height: 50em;
 }
 
 .headline {
-	margin-top: 1.75em;
+	margin-top: 0;
 	padding-top: 1.5em;
 	padding-bottom: .25em;
 	text-align: center;
@@ -297,11 +280,12 @@ body{
 }
 
 .headshots {
-	max-width: 100%;
+	width: 100%;
+	height: 375px;
 }
 
 .teacher{
-	max-width: 33.333%;
+	width: 33.333%;
 	float: left;
 	position: relative;
 	color: #000;
