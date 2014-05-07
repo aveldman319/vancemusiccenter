@@ -53,16 +53,30 @@ body{
 
 
 
+
+
+
+/* Tablet Layout */
+
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 
-<<<<<<< HEAD
+
 }
 
+
+/* Tablet Layout End */
+
+
+
+
+/* Desktop Layout */
+
+
 @media only screen and (min-width: 1024px){
-=======
 
 
->>>>>>> 4b66669a7af6fd2de71cf50d1426801540766aab
+
+
 
 
 html{
@@ -202,7 +216,7 @@ body{
 
 
 .products_head{
-	padding-top: 2.5em;
+	padding-top: 1.5em;
 	margin-bottom: .5em;
 	font-size: 70px;
 	letter-spacing: 4px;
@@ -586,6 +600,7 @@ body{
 
 
 
-
-
 }
+
+
+/* Desktop Layout End */
