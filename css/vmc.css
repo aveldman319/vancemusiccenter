@@ -47,6 +47,7 @@ body{
 
 .nav_logo{
 	float: left;
+	margin-top: .1em;
 	width: 1em;
 	height: inherit;
 	color: white;
@@ -236,7 +237,7 @@ body{
 }
 
 .headline {
-	padding-top: 1.5em;
+	padding-top: 2.5em;
 	padding-bottom: .25em;
 	text-align: center;
 	letter-spacing: 4px;
