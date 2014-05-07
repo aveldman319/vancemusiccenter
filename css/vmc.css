@@ -42,6 +42,7 @@ body{
 	background-color: #222222;
 	background-color: hsla(0, 100%, 0%, .6);
 	min-width: 51.25em;
+	z-index: 2;
 }
 
 .nav_logo{
@@ -94,9 +95,9 @@ body{
 
 #home{
 	width: 100%;
-	min-width: 46.125em;
+	min-width: 60em;
 	background: url(../images/header1.jpg) center;
-	height: 40em;
+	height: 50em;
 }
 
 .home_bkg{
@@ -123,83 +124,100 @@ body{
 
 
 
+
+
+
+
 /* Products Section */
 
-.product_background{
-	height: 825px;
-	width: 100%;
-	z-index: 1;
+#products{
+	background: url(../images/background.png) center no-repeat no-repeat;	 
+	height: 50em;
 }
 
 
 .products_head{
-	margin-top: -717px;
-	margin-left: 581px;
-	margin-bottom: 40px;
+	padding-top: 2.5em;
+	margin-bottom: .5em;
 	font-size: 70px;
 	letter-spacing: 4px;
-	z-index: 2;
-	position: relative;
-	width: 400px;
+	text-align: center;
 }
 
-.sectionbar{
-	background-color: black;
-	display: inline-block;
-	width: 325px;
-	border-radius: ;
-	height: 8.5px;
-	z-index: 2;
+.products{
+	width: inherit;
 }
 
-.sectionbar2{
-	background-color: black;
-	display: inline-block;
-	width: 325px;
-	border-radius: ;
-	height: 8.5px;
-	z-index: 2;
+.productSection{
+	margin: 70px 5em 50px;
+	-webkit-column-count:3; /* Chrome, Safari, Opera */
+	-moz-column-count:3; /* Firefox */
+	column-count:3;
 }
 
-#productSection {
-	z-index: 2;
-	width: 75%;
-	margin-top: 15px;
-	margin-bottom: 50px;
-	margin-left: 16.5%;
--webkit-column-count:3; /* Chrome, Safari, Opera */
--moz-column-count:3; /* Firefox */
-column-count:3;
-}
-
-#productSection2 {
-	z-index: 2;
-	width: 75%;
-	margin-top: 125px;
-	margin-left: 16.5%;
-	margin-right: ;
--webkit-column-count:3; /* Chrome, Safari, Opera */
--moz-column-count:3; /* Firefox */
-column-count:3;
+.instruments{
+	margin: 0 auto;
+	text-align: center;
 }
 
 .product-icon{
 	color: #97d5cb;
-	font-size: 215px;
-}
-
-.blurb{
-	font-size: 26px;
-	margin-top: 8px;
-	text-align: center;
+	font-size: 1200%;
+	margin: 0 auto;
 	width: 100%;
 }
 
-.instruments {
-	width: 80%;	
-	margin: auto;
+.blurb{
+	width: inherit;
+	font-size: 26px;
+	margin-top: 8px;
 }
 
+.flip_container{
+	-webkit-perspective: 1000; /* Chrome, Safari, Opera */
+	perspective: 1000;
+	z-index: 1;
+}
+
+	.flip_container:hover .flipper, .flip_container.hover .flipper{
+		-ms-transform: rotateY(180deg); /* IE 9 */
+		-webkit-transform: rotateY(180deg); /* Opera, Chrome, and Safari */
+		transform: rotateY(180deg);
+	}
+
+.flip_container, .front, .back{
+	width: 18em;
+	height: 15em;
+	margin: 0 auto;
+}
+
+.flipper {
+	-webkit-transition: 0.6s; /* For Safari 3.1 to 6.0 */
+	transition: 0.6s;
+	-webkit-transform-style: preserve-3d; /* Chrome, Safari, Opera */
+	transform-style: perspective-3d;
+	position: relative;
+}
+
+.front, .back{
+	-webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.back{
+	-ms-transform: rotateY(180deg); /* IE 9 */
+	-webkit-transform: rotateY(180deg); /* Opera, Chrome, and Safari */
+	transform: rotateY(180deg);
+}
+
+.product_list{
+	list-style-type: circle;
+	margin: 4em auto 0;
+	width: 25%;
+}
 
 /* Products Section End */
 
@@ -209,22 +227,25 @@ column-count:3;
 
 
 
+
 /* Lessons Section */
+
 #lessons {
-	margin-top: 10%;
 	background: url(../assets/background_gray.jpg);
-	z-index: 1;
-	position: absolute;
+	height: 50em;
 }
 
 .headline {
-	z-index: 2;
+	padding-top: 1.5em;
+	padding-bottom: .25em;
 	text-align: center;
-	word-spacing: 4px;
+	letter-spacing: 4px;
 	font-size: 70px;
-	position: relative;
-	margin-top: 5%;
 	width: 100%;
+}
+
+.lessons_container{
+	min-width: 33.333%;
 }
 
 .lessons_blurb {
@@ -256,25 +277,25 @@ column-count:3;
 }
 
 .headshots {
-	max-width: 100%;
+	width: 100%;
+	/* height: 375px; */
 }
 
 .teacher{
-	max-width: 33.333%;
+	width: 33.333%;
 	float: left;
 	position: relative;
 	color: #000;
-	height: 422px;
 }
 
 .teacher_info {
 	visibility: hidden;
 	background: #bbb;
-	width: 408px;
-	position: absolute;
+	max-width: 100%;
 	text-align: center;
-	bottom: 0;
 	padding: .5em;
+	position: relative;
+	bottom: 74px;
 }
 
 .teacher_name{
@@ -306,6 +327,7 @@ column-count:3;
 
 
 /* Lessons Section End */
+
 
 
 
@@ -358,4 +380,141 @@ column-count:3;
 	margin-top: 2em;
 }
 
-/* Contact Section End 
+
+.horizontal_rule1 {
+	height: 5px;
+	width: 250px;
+	background-color: #000000;
+	margin-left: 2em;
+	margin-top: 3em;
+	float: left;
+	margin-right: 3em;
+	border-radius: 15px;
+}
+
+.horizontal_rule2 {
+	height: 5px;
+	width: 250px;
+	background-color: #000000;
+	margin-left: 2em;
+	margin-top: 3em;
+	float: left;
+	margin-left: 3em;
+	border-radius: 15px;
+}
+
+.contact_section {
+	font-family: economica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	font-size: 2.5em;
+	float: left;
+	padding-top: .75em;
+}
+
+.store {
+	font-family: economica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.5em;
+	float: left;
+	padding-top: 1.2em;
+	padding-left: 3.5em;
+}
+
+.hours {
+	font-family: economica, sans-serif;
+	text-align: center;
+	font-size: 1.125em;
+	padding-top: 0em;
+	padding-left: 0em;
+	position: relative;
+	top: 55px;
+	left: -95px;
+	float: left;
+}
+
+.phone {
+	font-family: economica, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.5em;
+	position: relative;
+	top: 100px;
+	left: -190px;
+	float: left;
+
+}
+
+.address {
+	font-family: economica, sans-serif;
+	text-align: center;
+	font-size: 1.125em;
+	padding-top: 0em;
+	padding-left: 0em;
+	position: relative;
+	top: 102px;
+	left: -200px;
+	float: left;
+}
+
+#contact_map {
+	float: left;
+	margin-top: 7.5em;
+	margin-left: 2.5em;
+}
+
+.contact_container {
+	height: 350px;
+	width: 455px;
+	background-color: #FFFFFF;
+	clear: both;
+	float: left;
+	margin-left: 2em;
+	margin-top: 2em;
+}
+
+.name_field {	
+	position: relative;
+	top: 25px;
+	left: 40px;
+	height: 35px;
+	width: 375px;
+
+}
+
+.email_field {
+	position: relative;
+	top: 40px;
+	left: 40px;
+	height: 35px;
+	width: 375px;
+}
+
+.subject_field {
+	position: relative;
+	top: 55px;
+	left: 40px;
+	height: 35px;
+	width: 375px;
+}
+
+.message_field {
+	position: relative;
+	top: 70px;
+	left: 40px;
+	/*height: 500px;*/
+	width: 375px;
+}
+
+.fill_in {
+	width: 365px;
+}
+
+.contact_section_fields {
+	font-family: economica, sans-serif;	
+	font-weight: bold;
+}
+
+/* Contact Section End */
+
