@@ -97,7 +97,7 @@ body{
 	width: 100%;
 	min-width: 60em;
 	background: url(../images/header1.jpg) center;
-	height: 40em;
+	height: 50em;
 }
 
 .home_bkg{
@@ -132,12 +132,12 @@ body{
 
 #products{
 	background: url(../images/background.png) center no-repeat no-repeat;	 
-	height: 55em;
+	height: 50em;
 }
 
 
 .products_head{
-	padding-top: 1.5em;
+	padding-top: 2.5em;
 	margin-bottom: .5em;
 	font-size: 70px;
 	letter-spacing: 4px;
@@ -232,7 +232,7 @@ body{
 
 #lessons {
 	background: url(../assets/background_gray.jpg);
-	height: 45em;
+	height: 50em;
 }
 
 .headline {
