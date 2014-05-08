@@ -588,6 +588,7 @@ body{
 	border-radius: 15px;
 }
 
+
 .contact_section {
 	font-family: economica, sans-serif;
 	font-weight: bold;
@@ -597,26 +598,24 @@ body{
 	padding-top: .75em;
 }
 
+#contact_rule {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .store {
 	font-family: economica, sans-serif;
 	font-weight: bold;
 	text-align: center;
 	font-size: 1.5em;
-	float: left;
-	padding-top: 1.2em;
-	padding-left: 3.5em;
+	display: block;
 }
 
 .hours {
 	font-family: economica, sans-serif;
 	text-align: center;
 	font-size: 1.125em;
-	padding-top: 0em;
-	padding-left: 0em;
 	position: relative;
-	top: 55px;
-	left: -95px;
-	float: left;
 }
 
 .phone {
@@ -625,9 +624,6 @@ body{
 	text-align: center;
 	font-size: 1.5em;
 	position: relative;
-	top: 100px;
-	left: -190px;
-	float: left;
 
 }
 
@@ -635,19 +631,27 @@ body{
 	font-family: economica, sans-serif;
 	text-align: center;
 	font-size: 1.125em;
-	padding-top: 0em;
-	padding-left: 0em;
 	position: relative;
-	top: 102px;
-	left: -200px;
+	
+}
+
+#address_field {
+	margin-top: 3%;
+	width: 25%;
 	float: left;
 }
 
-#contact_map {
+#map {
+	margin-top: 1em;
+	float: left;
+	margin-right: 20%;
+	margin-left: 3%;
+}
+/*#contact_map {
 	float: left;
 	margin-top: 7.5em;
 	margin-left: 2.5em;
-}
+}*/
 
 .contact_container {
 	height: 350px;
