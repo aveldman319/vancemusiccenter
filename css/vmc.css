@@ -15,7 +15,7 @@ html{
 }
 
 body{
-
+	min-width: 100%;
 }
 
 .visible{
@@ -730,8 +730,11 @@ body{
 	position: relative;
 	top: 70px;
 	left: 40px;
-	/*height: 500px;*/
 	width: 375px;
+}
+
+.message{
+	height: 110px;
 }
 
 .fill_in {
