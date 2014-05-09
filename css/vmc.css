@@ -108,20 +108,21 @@ body{
 	float: none;
 	text-align: center;
 	font-size: 1.5em;
-	padding: 6em 0;
+	padding: 4.75em 0;
 }
 
 .nav_contact_item{
 	white-space: pre;
+	padding: .15em 0;
 }
 
-/*.icon-contact{
+.icon-contact{
 	display: none
 }
 
 .icon-map{
 	display: none;
-}*/
+}
 
 /* Home Section End */
 
