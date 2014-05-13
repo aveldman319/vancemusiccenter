@@ -4,12 +4,13 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 html{
 	min-height: 100%;
 	background: white;
-	position: absolute;
+	position: relative;
 }
 
 body{
 	background: #bbbbbb;
 	min-height: 100%;
+	width: 100%;
 }
 
 .float_r{
@@ -145,7 +146,7 @@ body{
 }
 
 .products{
-	width: inherit;
+	width: 100%;
 }
 
 .productSection{
@@ -153,6 +154,9 @@ body{
 	-webkit-column-count:3; /* Chrome, Safari, Opera */
 	-moz-column-count:3; /* Firefox */
 	column-count:3;
+	column-gap:10px;
+	-webkit-column-gap:10px; /* Chrome, Safari, Opera */
+	-moz-column-gap:10px; /* Firefox */
 }
 
 .instruments{
@@ -524,7 +528,6 @@ body{
 	.products_head{
 	font-size: 28px;
 	letter-spacing: 4px;
-	width: 343px;
 	}
 
 	#products{
@@ -534,16 +537,21 @@ body{
 	.product-icon{
 		color: #000;
 		font-size: 500%;
-		width: 90px;
 	}
 
-	.icon-drums{
-		width: 90px;
-	}
 
 	.flip_container, .front, .back{
 		width: 90px;
 		height: 10em;
+	}
+	.back{
+		margin: 0 1.25em;
+		left: -3.5em;
+	}
+
+	.product_list{
+		margin: auto 0;
+		width: 40px;
 	}
 
 	.product{
@@ -551,12 +559,10 @@ body{
 	}
 
 	.productSection{
-		margin: 20px;
-		width: 270px;
+		margin: 0 auto;
 		-webkit-column-count:3; /* Chrome, Safari, Opera */
 		-moz-column-count:3; /* Firefox */
 		column-count:3;
-}
 	}
 
 	.blurb{
@@ -573,5 +579,70 @@ body{
 		height: 30em;
 	}
 
-	
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+	/*Product Section*/
+	.products_head{
+	font-size: 28px;
+	letter-spacing: 4px;
+	}
+
+	#products{
+		height: 30em;
+	}
+
+	.product-icon{
+		color: #000;
+		font-size: 600%;
+	}
+
+
+	.flip_container, .front, .back{
+		width: 150px;
+		height: 10em;
+	}
+	.back{
+		margin: 0 1.25em;
+		left: -3.5em;
+	}
+
+	.product_list{
+		margin: auto 0;
+		width: 90px;
+	}
+
+	.product{
+		width: 100%;
+	}
+
+	.productSection{
+		margin: 20px 50px;
+		-webkit-column-count:3; /* Chrome, Safari, Opera */
+		-moz-column-count:3; /* Firefox */
+		column-count:3;
+
+	}
+
+	.flip_container{
+		column-gap:10px;
+		-webkit-column-gap:10px; /* Chrome, Safari, Opera */
+		-moz-column-gap:10px; /* Firefox */
+	}
+
+	.blurb{
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.flip_container{
+		margin: 0;
+	}
+
+	.product_list{
+		margin: auto 0;
+		width: 18em;
+	}
+
+
 }
