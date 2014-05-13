@@ -209,19 +209,63 @@ body{
 }
 
 .mobile_call{
-	width: 50%;
+	width: 49%;
 	height: inherit;
+	border-right: 2px solid #98d0c7;
+	font-size: 1.5em;
+}
+
+.mobile_call span, .mobile_call a, .mobile_map span{
+	display: inline-block;
+	margin-top: .4em;
+}
+
+.mobile_call a{
+	padding-right: .6em; 
 }
 
 .mobile_map{
 	width: 50%;
 	height: inherit;
+	font-size: 1.5em;
+}
+
+.mobile_map .economica{
+	padding-right: .5em;
 }
 
 .mobile_social_media_container{
 	height: 2em;
 	width: 100%;
-	background: #bbb;
+	background: #aaa;
+	text-align: center;
+}
+
+.connect_p{
+	display: inline-block;
+	padding: .35em;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: white;
+}
+
+.facebook{
+	display: inline-block;
+	background: url(../images/facebook_icon.png) center no-repeat;
+	background-size: 30px 30px; 
+	padding: .1em 0 0; 
+	width: 30px;
+	height: 30px;
+}
+
+.twitter{
+	display: inline-block;
+	background: url(../images/twitter_icon.png) center no-repeat;
+	background-size: 30px 30px;
+	padding: .1em .2em 0; 
+	width: 30px;
+	height: 30px;  
+
 }
 
 /* Mobile Section End */
