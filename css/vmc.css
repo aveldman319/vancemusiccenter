@@ -26,6 +26,10 @@ body{
 	display: none;
 }
 
+.desktop{
+	display: none;
+}
+
 .float_r{
 	float: right;
 }
@@ -48,15 +52,19 @@ body{
 /* Nav Section */
 
 .nav{
-	height: 144px;
+	height: 8em;
+	background: #98d0c7;
 }
 
 .nav_logo{
-	text-decoration: none;
-	display: block;
-	background: #98d0c7;
 	height: 1.5em;
 	width: 100%;
+}
+
+.nav_logo a{
+	display: block;
+	margin: .1em .7em;
+	text-decoration: none;
 	color: white;
 }
 
@@ -64,6 +72,7 @@ body{
 	height: 1.5em;
 	background: #222;
 	width: 100%;
+	margin-top: 5em;
 }
 
 .nav_list{
@@ -100,7 +109,7 @@ body{
 /* Home Section */
 
 #home{
-	height: 21em;
+	height: 19em;
 	background: url('../assets/mobiletexture.jpg') center no-repeat;
 }
 
@@ -108,20 +117,12 @@ body{
 	float: none;
 	text-align: center;
 	font-size: 1.5em;
-	padding: 4.75em 0;
+	padding: 4.5em 0;
 }
 
 .nav_contact_item{
 	white-space: pre;
 	padding: .15em 0;
-}
-
-.icon-contact{
-	display: none
-}
-
-.icon-map{
-	display: none;
 }
 
 /* Home Section End */
@@ -181,7 +182,54 @@ body{
 
 /* Contact Section End */
 
+
+
+
+/* Mobile Section */
+
+.footer{
+	height: 6.3em;
+	width: 100%;
 }
+
+.mobile_contact_container{
+	height: 4.3em;
+	width: 100%;
+	background: #444;
+}
+
+.mobile_contact_banner{
+	display: inline-block;
+	width: 90%;
+	height: 3em;
+	margin: .65em 5%;
+	background: #222;
+	text-align: center;
+	color: white;
+}
+
+.mobile_call{
+	width: 50%;
+	height: inherit;
+}
+
+.mobile_map{
+	width: 50%;
+	height: inherit;
+}
+
+.mobile_social_media_container{
+	height: 2em;
+	width: 100%;
+	background: #bbb;
+}
+
+/* Mobile Section End */
+
+
+
+}
+
 
 /* Mobile Layout End*/
 
@@ -273,6 +321,9 @@ body{
 	margin-top: .1em;
 	width: 1em;
 	height: inherit;
+}
+
+.nav_logo a{
 	color: white;
 	text-decoration: none;
 }
